@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-1q&@5&^bw7h#in7ac1kr5cvn%iyu%jk8*f9*!r9o)4q30f$at)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://codemail8.herokuapp.com', "127.0.0.1"]
+ALLOWED_HOSTS = ['codemail8.herokuapp.com', "127.0.0.1"]
 # ALLOWED_HOSTS = []
 
 
@@ -76,11 +76,11 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'd5v6171va5r5s1',
-            'USER': 'rphdykswamxipv',
-            'HOST': 'ec2-44-196-223-128.compute-1.amazonaws.com',
+            'NAME': 'def2k1omkcu2bk',
+            'USER': 'zauxlwcoqwvkew',
+            'HOST': 'ec2-44-195-100-240.compute-1.amazonaws.com',
             'PORT': 5432,
-            'PASSWORD': '6c32734bdf8334ffa0f199581f098b2eca20d58a278ee6dc5824813b3a655034'
+            'PASSWORD': 'abc52d4292837a3c4ebe14d866363e2c3ba7f370e88ae78a42aa1273f0f8287f'
         }
     }
 
