@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1q&@5&^bw7h#in7ac1kr5cvn%iyu%jk8*f9*!r9o)4q30f$at)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['codemail8.herokuapp.com', "127.0.0.1"]
 # ALLOWED_HOSTS = []
@@ -65,24 +65,17 @@ WSGI_APPLICATION = 'mailserver.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'def2k1omkcu2bk',
+        'USER': 'zauxlwcoqwvkew',
+        'HOST': 'ec2-44-195-100-240.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'PASSWORD': 'abc52d4292837a3c4ebe14d866363e2c3ba7f370e88ae78a42aa1273f0f8287f'
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'def2k1omkcu2bk',
-            'USER': 'zauxlwcoqwvkew',
-            'HOST': 'ec2-44-195-100-240.compute-1.amazonaws.com',
-            'PORT': 5432,
-            'PASSWORD': 'abc52d4292837a3c4ebe14d866363e2c3ba7f370e88ae78a42aa1273f0f8287f'
-        }
-    }
+}
 
 
 # Password validation
